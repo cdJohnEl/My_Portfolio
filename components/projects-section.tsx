@@ -46,6 +46,28 @@ const projects = [
     live: "https://discipline-loy4.onrender.com/",
   },
   
+  {
+    title: "AwaLane",
+    description:
+      "An AI-powered niche discovery dashboard for Nigerian content creators. Find underserved content niches with high growth potential, powered by real-time data and Groq AI.",
+    tags: ["Next.js", "Tailwind CSS", "Groq AI"],
+    github: "https://github.com/cdJohnEl/AwaLane",
+    live: "https://awalane.vercel.app/",
+  },
+  {
+    title: "KadaDispatch",
+    description:
+      "A delivery management platform featuring a multi-role system for sellers, drivers, and admins. Includes real-time tracking, secure driver wallets, and dynamic fee calculation.",
+    tags: ["Next.js", "TypeScript", "Firebase", "Tailwind CSS"],
+    github: "https://github.com/cdJohnEl/KadaDispatch",
+  },
+  {
+    title: "Synthetix",
+    description:
+      "An advanced code analysis tool using Gemini 3 Pro. Features include architecture diagram generation, deep logic auditing, and multi-file reasoning visualization.",
+    tags: ["Next.js", "FastAPI", "Python", "Gemini AI"],
+    github: "https://github.com/cdJohnEl/Synthetix",
+  },
 ]
 
 export function ProjectsSection() {
@@ -110,15 +132,17 @@ export function ProjectsSection() {
                   >
                     <Github size={20} />
                   </a>
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                    aria-label={`View live demo of ${project.title}`}
-                  >
-                    <ExternalLink size={20} />
-                  </a>
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                      aria-label={`View live demo of ${project.title}`}
+                    >
+                      <ExternalLink size={20} />
+                    </a>
+                  )}
                 </div>
               </div>
 
