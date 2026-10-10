@@ -54,7 +54,7 @@ export function AboutSection() {
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
                 I&apos;m a <span className="text-foreground font-medium">Full-Stack JavaScript Developer</span> with
-                over 2 years of experience in developing and maintaining scalable web applications using Python and
+                over 3 plus years of experience in developing and maintaining scalable web applications using Python and
                 JavaScript frameworks.
               </p>
               <p>

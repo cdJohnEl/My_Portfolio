@@ -5,7 +5,7 @@ import { ExternalLink } from "lucide-react"
 
 const experiences = [
   {
-    period: "Jun 2024 — Present",
+    period: "Jun 2024 — May 2026",
     title: "Head of Web Technologies / System Administrator",
     company: "Make A Face Publishing",
     description:
